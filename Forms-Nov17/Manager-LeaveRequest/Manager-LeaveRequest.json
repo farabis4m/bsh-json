@@ -5,7 +5,7 @@
       "tag": "PRS_ID_30524",
       "title": "Person Id",
       "type": "control_Label",
-      "value": 1234,
+      "value": "",
       "orientation": "horizontal",
       "hidden": true
     },
@@ -29,8 +29,8 @@
       "key": "EMPLOYEE_FULL_NAME",
       "tag": "EMPLOYEE_FULL_NAME_30528",
       "title": "Employee",
-      "type": "control_Label",
-      "value": "Sanu",
+      "type": "control_Dropdown",
+      "value": "",
       "orientation": "horizontal",
       "hidden": false
     },
@@ -58,51 +58,13 @@
     {
       "key": "REPLACING_PRS_ID",
       "tag": "REPLACING_PRS_ID_43443",
-      "title": "Deputy",
+      "title": "Replacement User",
       "type": "control_Dropdown",
       "value": "",
       "placeholder": "Select ...",
       "orientation": "horizontal",
       "hidden": false,
-      "required": false,
-      "options": [
-        {
-          "code": "70610",
-          "desc": "DRE ADMIN ( 4 )"
-        },
-        {
-          "code": "70635",
-          "desc": "FORD MOTORS( 4352 )"
-        },
-        {
-          "code": "89085",
-          "desc": "Fname98 Lname98( 10880324 )"
-        },
-        {
-          "code": "89086",
-          "desc": "Fname99 Lname99( 10880165 )"
-        },
-        {
-          "code": "70637",
-          "desc": "GRACE GRACE( 3873 )"
-        },
-        {
-          "code": "80632",
-          "desc": "John Kelly( 2396 )"
-        },
-        {
-          "code": "70594",
-          "desc": "MOHAMMAD AL KHALEEL( 35 )"
-        },
-        {
-          "code": "80633",
-          "desc": "Sally Abdo( 2397 )"
-        },
-        {
-          "code": "70611",
-          "desc": "Sameh Hamza( 3 )"
-        }
-      ]
+      "required": false
     },
     {
       "key": "ADDRESS_IN_LEAVE",
@@ -164,7 +126,7 @@
       "searchPlaceholder": "Search for ...",
       "threshold": "3",
       "multiselect": true,
-      "endpoint": "/form/list",
+      "url": "/form/list",
       "relatedComponents": [
         "PRS_ID_30524"
       ],
@@ -276,13 +238,30 @@
         "LEAVE_TYPE_LKP_56548"
       ],
       "inputParams": [
-        "PRS_ID_30524",
+        "EMPLOYEE_FULL_NAME_30528",
         "LEAVE_START_DATE_56547",
         "LEAVE_TYPE_LKP_56548"
       ],
       "endpoint": "/form/service",
       "triggerId": "59256",
       "DBFunctionName": "bsh$tp_ui.get_ts_db_proc_call"
+    }
+  ],
+  "staticServices": [
+    {
+      "component": "EMPLOYEE_FULL_NAME_30528",
+      "endpoint": "/form/search",
+      "triggerId": "59256",
+      "DBFunctionName": "bsh$tp_ui.get_ts_lov_data"
+    },
+    {
+      "component": "REPLACING_PRS_ID_43443",
+      "inputParams": [
+        "EMPLOYEE_FULL_NAME_30528"
+      ],
+      "endpoint": "/form/search",
+      "triggerId": "59253",
+      "DBFunctionName": "bsh$tp_ui.get_ts_lov_data"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "status": "success",
   "data": {
-    "components": [
+    "list": [
         {
             "component": "requestedFor",
             "value": "20 days"
