@@ -1,0 +1,288 @@
+{
+  "forms": [
+    {
+      "key": "PRS_ID",
+      "tag": "PRS_ID_30524",
+      "title": "Person Id",
+      "type": "control_Label",
+      "value": 1234,
+      "orientation": "horizontal",
+      "hidden": true
+    },
+    {
+      "key": "LEAVE_START_DATE",
+      "tag": "LEAVE_START_DATE_31823",
+      "type": "control_calendarRange",
+      "value": "17-11-2019|17-11-2019",
+      "hidden": true,
+      "required": true,
+      "dateFormat": "dd-mm-yyyy",
+      "placeholder_left": "Leave Start Date",
+      "placeholder_right": "Leave End Date",
+      "startMinDate": "17-11-2018",
+      "startMaxDate": "17-11-2020",
+      "endMinDate": "17-11-2018",
+      "endMaxDate": "17-11-2020",
+      "maxDays": "180"
+    },
+    {
+      "key": "EMPLOYEE_FULL_NAME",
+      "tag": "EMPLOYEE_FULL_NAME_30528",
+      "title": "Employee",
+      "type": "control_Label",
+      "value": "Sanu",
+      "orientation": "horizontal",
+      "hidden": false
+    },
+    {
+      "key": "REMARK",
+      "tag": "REMARK_57919",
+      "title": "Remarks",
+      "type": "control_EditTextView",
+      "value": "",
+      "placeholder": "Please enter the remarks ...",
+      "orientation": "horizontal",
+      "hidden": false,
+      "required": false,
+      "validations": [
+        {
+          "error": "Max length of field Exceeded",
+          "rule": "maxLength",
+          "value": "255"
+        }
+      ],
+      "maxLength": "255",
+      "textDirection": "ltr",
+      "inputType": "alphanumeric"
+    },
+    {
+      "key": "REPLACING_PRS_ID",
+      "tag": "REPLACING_PRS_ID_43443",
+      "title": "Deputy",
+      "type": "control_Dropdown",
+      "value": "",
+      "placeholder": "Select ...",
+      "orientation": "horizontal",
+      "hidden": false,
+      "required": false,
+      "options": [
+        {
+          "code": "70610",
+          "desc": "DRE ADMIN ( 4 )"
+        },
+        {
+          "code": "70635",
+          "desc": "FORD MOTORS( 4352 )"
+        },
+        {
+          "code": "89085",
+          "desc": "Fname98 Lname98( 10880324 )"
+        },
+        {
+          "code": "89086",
+          "desc": "Fname99 Lname99( 10880165 )"
+        },
+        {
+          "code": "70637",
+          "desc": "GRACE GRACE( 3873 )"
+        },
+        {
+          "code": "80632",
+          "desc": "John Kelly( 2396 )"
+        },
+        {
+          "code": "70594",
+          "desc": "MOHAMMAD AL KHALEEL( 35 )"
+        },
+        {
+          "code": "80633",
+          "desc": "Sally Abdo( 2397 )"
+        },
+        {
+          "code": "70611",
+          "desc": "Sameh Hamza( 3 )"
+        }
+      ]
+    },
+    {
+      "key": "ADDRESS_IN_LEAVE",
+      "tag": "ADDRESS_IN_LEAVE_34426",
+      "title": "Address/Remarks",
+      "type": "control_EditTextView",
+      "value": "",
+      "placeholder": "Please enter your address ...",
+      "orientation": "horizontal",
+      "hidden": false,
+      "required": false,
+      "validations": [
+        {
+          "error": "Max length of field Exceeded",
+          "rule": "maxLength",
+          "value": "255"
+        }
+      ],
+      "maxLength": "255",
+      "textDirection": "ltr",
+      "inputType": "alphanumeric"
+    },
+    {
+      "key": "Docs",
+      "tag": "Docs",
+      "title": "Attach Files",
+      "max_count": 3,
+      "type": "control_Document",
+      "required": "false",
+      "placeholder": "Attach Files",
+      "allowed_types": [
+        "pdf",
+        "jpg",
+        "doc"
+      ],
+      "validations": [
+        {
+          "error": "The Chosen file size should not exceed 250KB, Please select another file with less size",
+          "rule": "maxSize",
+          "value": "250"
+        }
+      ]
+    },
+    {
+      "key": "PRSLVMF020D",
+      "tag": "PRSLVMF020D_56531",
+      "title": "Leave Details",
+      "type": "control_Entity_Form",
+      "required": "true",
+      "value": ""
+    },
+    {
+      "key": "PRSLVMF020D2",
+      "tag": "PRSLVMF020D2_194043",
+      "title": "Extensions",
+      "type": "control_Entity_List",
+      "required": "true",
+      "value": "",
+      "searchPlaceholder": "Search for ...",
+      "threshold": "3",
+      "multiselect": true,
+      "url": "/form/list",
+      "relatedComponents": [
+        "PRS_ID_30524"
+      ],
+      "inputParams": [
+        "PRS_ID_30524"
+      ],
+      "triggerId": "59252",
+      "DBFunctionName": "bsh$tp_ui.get_ts_lov_data_dtl_ms"
+    }
+  ],
+  "subForms": [
+    {
+      "component": "PRSLVMF020D_56531",
+      "forms": [
+        {
+          "tag": "info_PRSLVMF020D_56531",
+          "title": "Leave Details",
+          "type": "control_Info",
+          "alignment": "LEFT"
+        },
+        {
+          "key": "LEAVE_TYPE_LKP",
+          "tag": "LEAVE_TYPE_LKP_56548",
+          "title": "Leave Type lkp",
+          "type": "control_EditText",
+          "value": "",
+          "placeholder": "Select ...",
+          "orientation": "horizontal",
+          "hidden": false,
+          "required": true,
+          "validations": [
+            {
+              "error": "Field is required",
+              "rule": "required"
+            },
+            {
+              "error": "Max length of field Exceeded",
+              "rule": "maxLength",
+              "value": "50"
+            }
+          ],
+          "maxLength": "50",
+          "inputType": "numeric"
+        },
+        {
+          "key": "LEAVE_START_DATE",
+          "tag": "LEAVE_START_DATE_56547",
+          "title": "Start Date",
+          "type": "control_calendar",
+          "value": "",
+          "placeholder": "Select ...",
+          "orientation": "horizontal",
+          "hidden": false,
+          "required": true,
+          "dateFormat": "dd-mm-yyyy",
+          "minDate": "17-11-2018",
+          "maxDate": "17-11-2020"
+        },
+        {
+          "key": "LEAVE_END_DATE",
+          "tag": "LEAVE_END_DATE_56551",
+          "title": "End Date",
+          "type": "control_calendar",
+          "value": "",
+          "placeholder": "Select ...",
+          "orientation": "horizontal",
+          "hidden": false,
+          "required": true,
+          "dateFormat": "dd-mm-yyyy",
+          "minDate": "17-11-2018",
+          "maxDate": "17-11-2020"
+        },
+        {
+          "key": "LEAVE_DAYS",
+          "tag": "LEAVE_DAYS_56564",
+          "title": "#Leave Days",
+          "type": "control_Label",
+          "value": "",
+          "orientation": "horizontal",
+          "hidden": false,
+          "rowPattern": {
+            "order": 1,
+            "fontStyle": "bold",
+            "alignment": "left"
+          }
+        },
+        {
+          "key": "EXP_LEAVE_BALANCE",
+          "tag": "EXP_LEAVE_BALANCE_56534",
+          "title": "Bal. at End",
+          "type": "control_Label",
+          "value": "",
+          "orientation": "horizontal",
+          "hidden": false,
+          "rowPattern": {
+            "order": 2,
+            "fontStyle": "italics",
+            "alignment": "right"
+          }
+        }
+      ]
+    }
+  ],
+  "relations": [],
+  "relatedServices": [
+    {
+      "relatedComponents": [
+        "LEAVE_START_DATE_56547",
+        "LEAVE_TYPE_LKP_56548"
+      ],
+      "inputParams": [
+        "PRS_ID_30524",
+        "LEAVE_START_DATE_56547",
+        "LEAVE_TYPE_LKP_56548"
+      ],
+      "endpoint": "/form/service",
+      "triggerId": "59256",
+      "DBFunctionName": "bsh$tp_ui.get_ts_db_proc_call"
+    }
+  ]
+}

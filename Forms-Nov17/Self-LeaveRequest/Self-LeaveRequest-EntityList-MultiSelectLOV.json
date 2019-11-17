@@ -1,0 +1,103 @@
+{
+  "status": "sucess",
+  "data": {
+    "list": [
+      {
+        "id": "80632",
+        "name": "2396",
+        "value": "John Kelly",
+        "hire_date": "22-08-2012",
+        "job": "Manager"
+      },
+      {
+        "id": "80633",
+        "name": "2397",
+        "value": "Sally Abdo",
+        "hire_date": "24-08-2012",
+        "job": "GENERAL"
+      },
+      {
+        "id": "70637",
+        "name": "3873",
+        "value": "GRACE GRACE",
+        "hire_date": "22-08-2012",
+        "job": "Worker"
+      },
+      {
+        "id": "89085",
+        "name": "10880324",
+        "value": "Fname98 Lname98",
+        "hire_date": "18-10-2009",
+        "job": "Worker"
+      },
+      {
+        "id": "89086",
+        "name": "10880165",
+        "value": "Fname99 Lname99",
+        "hire_date": "18-10-2009",
+        "job": "Worker"
+      },
+      {
+        "id": "70635",
+        "name": "4352",
+        "value": "FORD MOTORS",
+        "hire_date": "18-10-2009",
+        "job": "Worker"
+      },
+      {
+        "id": "70606",
+        "name": "40",
+        "value": "YESH BAFNA",
+        "hire_date": "18-10-2009",
+        "job": "Worker"
+      },
+      {
+        "id": "70616",
+        "name": "42",
+        "value": "Mahmoud Mokthar",
+        "hire_date": "18-10-2009",
+        "job": "Worker"
+      },
+      {
+        "id": "70621",
+        "name": "65788",
+        "value": "Danfoss Danfoss",
+        "hire_date": "18-10-2009",
+        "job": "Worker"
+      },
+      {
+        "id": "70621",
+        "name": "65788",
+        "value": "Danfoss Danfoss",
+        "hire_date": "18-10-2009",
+        "job": "Worker"
+      }
+    ],
+    "displayList": [
+      {
+        "key": "value",
+        "rowpattern": {
+          "order": 1,
+          "fontstyle": "bold",
+          "alignment": "left"
+        }
+      },
+      {
+        "key": "hire_date",
+        "rowpattern": {
+          "order": 2,
+          "fontstyle": "normal",
+          "alignment": "right"
+        }
+      },
+      {
+        "key": "job",
+        "rowpattern": {
+          "order": 3,
+          "fontstyle": "light",
+          "alignment": "left"
+        }
+      }
+    ]
+  }
+}

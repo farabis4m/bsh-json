@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "data": {
+    "components": [
+        {
+            "component": "requestedFor",
+            "value": "20 days"
+        },
+        {
+            "component": "income",
+            "value": "30 days"
+        }
+    ]
+  }
+}
