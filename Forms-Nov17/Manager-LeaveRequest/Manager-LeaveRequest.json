@@ -247,7 +247,7 @@
       "DBFunctionName": "bsh$tp_ui.get_ts_db_proc_call"
     }
   ],
-  "staticServices": [
+  "onDemandServices": [
     {
       "component": "EMPLOYEE_FULL_NAME_30528",
       "endpoint": "/form/search",
