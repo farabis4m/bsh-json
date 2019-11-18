@@ -1,24 +1,22 @@
 {
   "status": "success",
-  "data": {
-    "list": [
-      {
-        "component": "leaveType",
-        "values": [
-          {
-            "code": "Annual",
-            "description": "Annual Leave"
-          },
-          {
-            "code": "Sick",
-            "description": "Sick Leave"
-          },
-          {
-            "code": "Maternity",
-            "description": "Maternity Leave"
-          }
-        ]
-      }
-    ]
-  }
+  "data": [
+    {
+      "component": "ReplacementEmployee",
+      "values": [
+        {
+          "code": "01",
+          "desc": "ABCD"
+        },
+        {
+          "code": "01",
+          "desc": "ABCD"
+        },
+        {
+          "code": "01",
+          "desc": "ABCD"
+        }
+      ]
+    }
+  ]
 }

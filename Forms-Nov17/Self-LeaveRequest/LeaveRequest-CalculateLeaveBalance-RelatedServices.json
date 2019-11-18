@@ -1,15 +1,13 @@
 {
   "status": "success",
-  "data": {
-    "list": [
-        {
-            "component": "requestedFor",
-            "value": "20 days"
-        },
-        {
-            "component": "income",
-            "value": "30 days"
-        }
-    ]
-  }
+  "data": [
+    {
+      "component": "LeaveBalance",
+      "value": "18"
+    },
+    {
+      "component": "LeaveEndDate",
+      "value": "1-10-2019"
+    }
+  ]
 }
