@@ -4,11 +4,16 @@
     {
       "title": "Overtime Request",
       "type": "OVERTIME",
-      "requestId": "124566644",
+      "requestId": 124566644,
       "date": "26-07-2019",
       "submittedBy": "James Hades Gosling",
       "details": {
         "componentList": [
+          {
+            "type": "userInfo",
+            "name": "Kay Totleben",
+            "department": "Accounts Department"
+          },
           {
             "type": "submittedBy",
             "date": "1 May 2019",
@@ -20,7 +25,7 @@
             "id": 545524,
             "status": {
               "code": "APR",
-              "desc": "Approved"
+              "description": "Approved"
             },
             "info": "200 AED"
           },
@@ -88,12 +93,17 @@
     {
       "title": "Leave Request",
       "type": "LEAVE",
-      "requestId": "124561212",
+      "requestId": 124561212,
       "date": "06-06-2019",
       "submittedBy": "James Hades Gosling",
       "requestedFor": "James Hades Gosling",
       "details": {
         "componentList": [
+          {
+            "type": "userInfo",
+            "name": "Kay Totleben",
+            "department": "Accounts Department"
+          },
           {
             "type": "submittedBy",
             "date": "1 May 2019",
@@ -105,7 +115,7 @@
             "id": 545524,
             "status": {
               "code": "APR",
-              "desc": "Approved"
+              "description": "Approved"
             },
             "info": "30 Days",
             "subType": "Annual Leave"
@@ -169,12 +179,17 @@
     {
       "title": "Loan Request",
       "type": "LOAN",
-      "requestId": "10000001",
+      "requestId": 10000001,
       "date": "16-09-2019",
       "submittedBy": "Tommy Tom Hilfigher",
       "requestedFor": "Tommy Tom Hilfigher",
       "details": {
         "componentList": [
+          {
+            "type": "userInfo",
+            "name": "Kay Totleben",
+            "department": "Accounts Department"
+          },
           {
             "type": "submittedBy",
             "name": "Arkell Charles",
@@ -186,7 +201,7 @@
             "id": 545524,
             "status": {
               "code": "APR",
-              "desc": "Approved"
+              "description": "Approved"
             },
             "info": "5000 AED",
             "subType": "Home Loan"
