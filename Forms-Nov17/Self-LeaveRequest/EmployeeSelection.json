@@ -1,0 +1,15 @@
+{
+  "status": "sucess",
+  "data": {
+    "list": [
+      {
+        "code": "80632",
+        "description": "Sanu S"
+      },
+      {
+        "code": "80633",
+        "description": "Thasneem"
+      }
+    ]
+  }
+}
