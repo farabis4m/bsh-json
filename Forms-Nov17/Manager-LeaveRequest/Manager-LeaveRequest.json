@@ -5,7 +5,7 @@
       "tag": "PRS_ID_30524",
       "title": "Person Id",
       "type": "control_Label",
-      "value": "",
+      "value": 12345,
       "orientation": "horizontal",
       "hidden": true
     },
@@ -30,7 +30,10 @@
       "tag": "EMPLOYEE_FULL_NAME_30528",
       "title": "Employee",
       "type": "control_Dropdown",
-      "value": "",
+      "selectedValue": {
+        "code": "12345",
+        "description": "Mohammad"
+      },
       "orientation": "horizontal",
       "hidden": false
     },
