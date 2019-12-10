@@ -1,0 +1,23 @@
+{
+  "PRS_ID": "Fname457 Lname457",
+  "REPLACING_PRS_ID": "86887",
+  "WEB_REMARKS": "cycyyc",
+  "LEAVE_START_DATE": "17-12-2019|17-12-2019",
+  "EMPLOYEE_FULL_NAME": "Sanu",
+  "EXPCEPTION_FLAG": "true",
+  "DESTINATION": "uvvgu",
+  "PRSLVMF020D": [
+    {
+      "LEAVE_TYPE_LKP": "12345",
+      "LEAVE_START_DATE": "18-12-2019|18-12-2019",
+      "LEAVE_DAYS": "1-10-2019",
+      "LEAVE_BALANCE": "18"
+    }
+  ],
+  "REQUEST_DATE": "25-12-2019",
+  "PRSLVMF020D2": [
+    "80633",
+    "70637",
+    "89085"
+  ]
+}
