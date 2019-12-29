@@ -1,0 +1,353 @@
+{
+  "forms": [
+    {
+      "key": "PRS_ID",
+      "tag": "PRS_ID_30524",
+      "title": "Person Id",
+      "type": "control_Dropdown",
+      "value": "",
+      "orientation": "horizontal",
+      "hidden": false,
+      "placeholder": "Select ...",
+      "required": true,
+      "options": [
+        {
+          "code": "ADMIN ADMIN",
+          "desc": "86887"
+        },
+        {
+          "code": "Fname455 Lname455",
+          "desc": "89442"
+        },
+        {
+          "code": "Fname456 Lname456",
+          "desc": "89443"
+        },
+        {
+          "code": "Fname457 Lname457",
+          "desc": "89444"
+        },
+        {
+          "code": "Fname458 Lname458",
+          "desc": "89445"
+        },
+        {
+          "code": "Fname459 Lname459",
+          "desc": "89446"
+        },
+        {
+          "code": "Fname460 Lname460",
+          "desc": "89447"
+        },
+        {
+          "code": "Fname461 Lname461",
+          "desc": "89448"
+        },
+        {
+          "code": "Fname462 Lname462",
+          "desc": "89449"
+        },
+        {
+          "code": "Fname463 Lname463",
+          "desc": "89450"
+        },
+        {
+          "code": "Fname464 Lname464",
+          "desc": "89451"
+        },
+        {
+          "code": "Fname465 Lname465",
+          "desc": "89452"
+        },
+        {
+          "code": "Fname104 Lname104",
+          "desc": "89091"
+        },
+        {
+          "code": "Fname105 Lname105",
+          "desc": "89092"
+        },
+        {
+          "code": "Fname106 Lname106",
+          "desc": "89093"
+        },
+        {
+          "code": "Fname107 Lname107",
+          "desc": "89094"
+        },
+        {
+          "code": "Fname108 Lname108",
+          "desc": "89095"
+        },
+        {
+          "code": "Fname110 Lname110",
+          "desc": "89097"
+        },
+        {
+          "code": "Fname111 Lname111",
+          "desc": "89098"
+        }
+      ]
+    },
+    {
+      "key": "REPLACING_PRS_ID",
+      "tag": "REPLACING_PRS_ID_43443",
+      "type": "control_Dropdown",
+      "value": "",
+      "hidden": false,
+      "required": false,
+      "title": "Deputy",
+      "placeholder": "Select ...",
+      "orientation": "horizontal",
+      "options": [
+        {
+          "code": "86887",
+          "desc": "ADMIN ADMIN( 1868 )"
+        },
+        {
+          "code": "89098",
+          "desc": "Fname111 Lname111( 10880172 )"
+        },
+        {
+          "code": "89102",
+          "desc": "Fname115 Lname115( 10880246 )"
+        },
+        {
+          "code": "88990",
+          "desc": "Fname3 Lname3( 10880002 )"
+        }
+      ]
+    },
+    {
+      "key": "WEB_REMARKS",
+      "tag": "WEB_REMARKS_296029",
+      "title": "Remarks",
+      "type": "control_EditTextView",
+      "value": "",
+      "orientation": "horizontal",
+      "hidden": false,
+      "placeholder": "Select ...",
+      "required": false,
+      "validations": [
+        {
+          "error": "Max length of field Exceeded",
+          "rule": "maxLength",
+          "value": "10"
+        }
+      ],
+      "maxLength": "10",
+      "textDirection": "ltr",
+      "inputType": "alphanumeric"
+    },
+    {
+      "key": "Docs",
+      "tag": "Docs",
+      "title": "Attach Files",
+      "type": "control_Document",
+      "placeholder": "Attach Files",
+      "required": false,
+      "validations": [
+        {
+          "error": "The Chosen file size should not exceed 1000KB, Please select another file with less size",
+          "rule": "maxSize",
+          "value": "600"
+        }
+      ],
+      "max_count": 3,
+      "allowed_types": [
+        "pdf",
+        "jpg",
+        "doc"
+      ]
+    },
+    {
+      "key": "LEAVE_START_DATE",
+      "tag": "LEAVE_START_DATE_31823",
+      "type": "control_calendarRange",
+      "value": "17-11-2019|17-11-2019",
+      "hidden": false,
+      "required": true,
+      "dateFormat": "dd-MM-yyyy",
+      "placeholder_left": "Leave Start Date",
+      "placeholder_right": "Leave End Date",
+      "startMinDate": "17-12-2019",
+      "startMaxDate": "20-12-2019",
+      "endMinDate": "21-12-2019",
+      "endMaxDate": "30-12-2019",
+      "maxDays": "8"
+    },
+    {
+      "key": "EMPLOYEE_FULL_NAME",
+      "tag": "EMPLOYEE_FULL_NAME_30528",
+      "title": "Employee",
+      "type": "control_Label",
+      "value": "Sanu",
+      "orientation": "horizontal",
+      "hidden": false
+    },
+    {
+      "key": "EXPCEPTION_FLAG",
+      "tag": "EXPCEPTION_FLAG_300272",
+      "title": "Exception?",
+      "type": "control_CheckBox",
+      "value": ""
+    },
+    {
+      "key": "DESTINATION",
+      "tag": "DESTINATION_329320",
+      "title": "Destination",
+      "type": "control_EditText",
+      "required": false,
+      "value": "",
+      "placeholder": "Select ...",
+      "orientation": "horizontal",
+      "validations": [],
+      "maxLength": "",
+      "textDirection": "ltr",
+      "inputType": "alphanumeric"
+    },
+    {
+      "key": "PRSLVMF020D",
+      "tag": "PRSLVMF020D_56531",
+      "title": "Leave Details",
+      "type": "control_Entity_Form",
+      "required": true,
+      "value": "",
+      "relatedComponents": [
+        "PRS_ID_30524"
+      ]
+    },
+    {
+      "key": "REQUEST_DATE",
+      "tag": "REQUEST_DATE_300275",
+      "title": "Request Date",
+      "type": "control_calendar",
+      "required": true,
+      "value": "06-10-2019",
+      "placeholder": "Select ...",
+      "orientation": "horizontal",
+      "validations": [
+        {
+          "error": "Field is required",
+          "rule": "required"
+        }
+      ],
+      "dateFormat": "dd-MM-yyyy",
+      "minDate": "06-10-2018",
+      "maxDate": "06-10-2020"
+    },
+    {
+      "key": "PRSLVMF020D2",
+      "tag": "PRSLVMF020D2_194043",
+      "title": "Extensions",
+      "type": "control_Entity_List",
+      "required": true,
+      "value": "",
+      "searchPlaceholder": "Search for ...",
+      "threshold": "3",
+      "multiselect": true,
+      "endpoint": "/form/list",
+      "relatedComponents": [
+        "PRS_ID_30524"
+      ],
+      "inputParams": [
+        "PRS_ID_30524"
+      ],
+      "triggerId": "59252",
+      "DBFunctionName": "bsh$tp_ui.get_ts_lov_data_dtl_ms"
+    }
+  ],
+  "subForms": [
+    {
+      "component": "PRSLVMF020D_56531",
+      "forms": [
+        {
+          "tag": "info_PRSLVMF020D_56531",
+          "title": "Leave Details",
+          "type": "control_Info",
+          "alignment": "LEFT"
+        },
+        {
+          "key": "LEAVE_TYPE_LKP",
+          "tag": "LEAVE_TYPE_LKP_56548",
+          "title": "Leave Type lkp",
+          "type": "control_Dropdown",
+          "value": "",
+          "placeholder": "Select ...",
+          "orientation": "horizontal",
+          "hidden": false,
+          "required": true,
+          "selectedValue": {
+            "code": "12345",
+            "description": "Mohammad"
+          }
+        },
+        {
+          "key": "LEAVE_START_DATE",
+          "tag": "LEAVE_START_DATE_56547",
+          "type": "control_calendarRange",
+          "value": "|",
+          "hidden": false,
+          "required": true,
+          "dateFormat": "dd-MM-yyyy",
+          "placeholder_left": "Leave Start Date",
+          "placeholder_right": "Leave End Date",
+          "startMinDate": "29-11-2018",
+          "startMaxDate": "29-11-2020",
+          "endMinDate": "29-11-2018",
+          "endMaxDate": "29-11-2020",
+          "maxDays": "180"
+        },
+        {
+          "key": "LEAVE_DAYS",
+          "tag": "LEAVE_DAYS_56564",
+          "title": "#Leave Days",
+          "type": "control_Label",
+          "value": "",
+          "orientation": "horizontal",
+          "hidden": false
+        },
+        {
+          "key": "LEAVE_BALANCE",
+          "tag": "LEAVE_BALANCE_56533",
+          "title": "Balance@ Start Date",
+          "type": "control_Label",
+          "value": "",
+          "orientation": "horizontal",
+          "hidden": false
+        }
+      ]
+    }
+  ],
+  "relations": [],
+  "relatedServices": [
+    {
+      "relatedComponents": [
+        "LEAVE_TYPE_LKP_56548",
+        "LEAVE_START_DATE_56547"
+      ],
+      "inputParams": [
+        "PRS_ID_30524",
+        "LEAVE_TYPE_LKP_56548",
+        "LEAVE_START_DATE_56547"
+      ],
+      "endpoint": "/form/service",
+      "triggerId": "57324",
+      "DBFunctionName": "bsh$tp_ui.get_ts_db_proc_call"
+    }
+  ],
+  "onDemandServices": [
+    {
+      "component": "LEAVE_TYPE_LKP_56548",
+      "inputParams": [
+        "PRS_ID_30524"
+      ],
+      "endpoint": "/form/search",
+      "triggerId": "57325",
+      "DBFunctionName": "bsh$tp_ui.get_ts_lov_data"
+    }
+  ],
+  "requetType": "LREQ",
+  "triggerId": "12345",
+  "DBFunctionName": "bsh$ui_mob.submit_fun_name"
+}

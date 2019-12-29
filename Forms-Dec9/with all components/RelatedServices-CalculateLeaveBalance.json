@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "data": [
+    {
+      "component": "LEAVE_BALANCE_56533",
+      "value": "18"
+    },
+    {
+      "component": "LEAVE_DAYS_56564",
+      "value": "1-10-2019"
+    }
+  ]
+}
