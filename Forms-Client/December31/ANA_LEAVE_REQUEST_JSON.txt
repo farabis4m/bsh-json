@@ -1,0 +1,226 @@
+{
+"forms": [ 
+{
+    "key":  "PRS_ID"
+ ,     "tag":  "PRS_ID_LVM020"
+ ,     "resetComponents":  ["LEAVE_DAYS_LVM020D","LEAVE_TYPE_LKP_LVM020D","REPLACING_PRS_ID_LVM020","LEAVE_BALANCE_LVM020D"]
+ ,     "title":  "Person Id"
+ ,     "type":  "control_Dropdown"
+ ,     "selectedValue":  {"code": "","description": "..."}
+ ,     "placeholder":  "Select ..."
+ ,     "orientation":  "horizontal"
+ ,     "hidden":  false
+ ,     "required":  true
+ ,      "validations": [
+    {
+          "error": "Field is required",
+          "rule": "required"
+        }
+        ]
+}
+
+
+,{
+    "key":  "REPLACING_PRS_ID"
+ ,     "tag":  "REPLACING_PRS_ID_LVM020"
+ ,     "title":  "Deputy"
+ ,     "type":  "control_Dropdown"
+ ,     "selectedValue":  {"code": "","description": ""}
+ ,     "placeholder":  "Select ..."
+ ,     "orientation":  "horizontal"
+ ,     "hidden":  false
+ ,     "required":  false
+ ,      "validations": [
+    ]
+}
+
+
+,{
+    "key":  "WEB_REMARKS"
+ ,     "tag":  "WEB_REMARKS_LVM020"
+ ,     "title":  "Remarks"
+ ,     "type":  "control_EditTextView"
+ ,     "value":  ""
+ ,     "placeholder":  "Select ..."
+ ,     "orientation":  "vertical"
+ ,     "hidden":  false
+ ,     "required":  false
+ ,      "validations": [
+  {
+          "error": "Max length of field Exceeded",
+          "rule": "maxLength",
+          "value": 255
+        }
+         ]
+ ,     "maxLength":  255
+ ,     "textDirection":  "ltr"
+ ,     "inputType":  "alphanumeric"
+}
+
+
+,{     "key":"Docs",
+      "tag":"Docs",
+      "title":"Attach Files",
+      "max_count":3,
+      "type": "control_Document",
+      "required":false,
+      "placeholder":"Attach Files",
+      "allowed_types":["pdf","jpg","doc"],
+      "validations": [
+    { "error" : "The Chosen file size should not exceed 1000KB, Please select another file with less size",
+      "rule": "maxSize",
+      "value": "1000"
+    }
+                    ]
+ },{
+    "key":  "PRSLVMF020D"
+ ,     "tag":  "PRSLVMF020D_LVM020"
+ ,     "title":  "Leave Details"
+ ,     "type":  "control_Entity_Form"
+ ,     "required":  true
+ ,      "validations": [
+    {
+          "error": "Field is required",
+          "rule": "required"
+        }
+        ]
+ ,     "relatedComponents":  ["PRS_ID_LVM020"]
+ ,     "value":  ""
+}
+
+  ],
+"subForms": [ 
+{
+    "component":  "PRSLVMF020D_LVM020"
+  ,  "forms":[
+{
+    "tag":  "info_PRSLVMF020D_LVM020"
+ ,     "title":  "Leave Details"
+ ,     "type":  "control_Info"
+ ,     "alignment":  "LEFT"
+}
+,{
+    "key":  "LEAVE_TYPE_LKP"
+ ,     "tag":  "LEAVE_TYPE_LKP_LVM020D"
+ ,     "resetComponents":  ["LEAVE_DAYS_LVM020D","LEAVE_BALANCE_LVM020D"]
+ ,     "title":  "Leave Type lkp"
+ ,     "type":  "control_Dropdown"
+ ,     "selectedValue":  {"code": "","description": ""}
+ ,     "placeholder":  "Select ..."
+ ,     "orientation":  "horizontal"
+ ,     "hidden":  false
+ ,     "required":  true
+ ,      "validations": [
+    {
+          "error": "Field is required",
+          "rule": "required"
+        }
+        ]
+ ,     "rowPattern":   {
+            "order": 1,
+            "fontStyle": "bold"
+          }
+}
+
+
+,{
+    "key":  "LEAVE_START_DATE"
+ ,     "tag":  "LEAVE_START_DATE_LVM020D"
+ ,     "resetComponents":  ["LEAVE_DAYS_LVM020D","LEAVE_BALANCE_LVM020D"]
+ ,     "title":  "Leave Start Date"
+ ,     "type":  "control_calendarRange"
+ ,     "value":  "31-12-2019"
+ ,     "hidden":  false
+ ,     "required":  true
+ ,      "validations": [
+    {
+          "error": "Field is required",
+          "rule": "required"
+        }
+        ]
+ ,     "rowPattern":   {
+            "order": 2,
+            "fontStyle": "bold"
+          }
+ ,     "dateFormat":  "dd-MM-yyyy"
+ ,     "placeholder_left":  "Leave Start Date"
+ ,     "placeholder_right":  "Leave End Date"
+ ,     "startMinDate":  "31-12-2018"
+ ,     "startMaxDate":  "31-12-2020"
+ ,     "endMinDate":  "31-12-2018"
+ ,     "endMaxDate":  "31-12-2020"
+ ,     "maxDays":  "180"
+}
+
+
+,{
+    "key":  "LEAVE_DAYS"
+ ,     "tag":  "LEAVE_DAYS_LVM020D"
+ ,     "title":  "#Leave Days"
+ ,     "type":  "control_Label"
+ ,     "selectedValue":  {"code": "","description": ""}
+ ,     "orientation":  "horizontal"
+ ,     "hidden":  false
+ ,     "rowPattern":   {
+            "order": 3,
+            "fontStyle": "italics"
+          }
+}
+
+
+,{
+    "key":  "LEAVE_BALANCE"
+ ,     "tag":  "LEAVE_BALANCE_LVM020D"
+ ,     "title":  "Balance@ Start Date"
+ ,     "type":  "control_Label"
+ ,     "selectedValue":  {"code": "","description": ""}
+ ,     "orientation":  "horizontal"
+ ,     "hidden":  false
+ ,     "rowPattern":   {
+            "order": 4,
+            "fontStyle": "italics"
+          }
+}
+
+
+]
+}
+  ],
+"relations": [
+  ]
+,
+"relatedServices": [
+ {
+    "relatedComponents":  ["LEAVE_TYPE_LKP_LVM020D","LEAVE_START_DATE_LVM020D"]
+ ,     "inputParams":  ["PRS_ID_LVM020","LEAVE_TYPE_LKP_LVM020D","LEAVE_START_DATE_LVM020D"]
+ ,     "endpoint":  "form/service"
+ ,     "triggerId":  "57324"
+ ,     "DBFunctionName":  "bsh$tp_ui.get_ts_db_proc_call"
+ }
+  ]
+,
+"onDemandServices": [
+ {
+    "component":  "LEAVE_TYPE_LKP_LVM020D"
+ ,     "inputParams":  ["PRS_ID_LVM020"]
+ ,     "endpoint":  "form/search"
+ ,     "triggerId":  "57325"
+ ,     "DBFunctionName":  "bsh$tp_ui.get_ts_lov_data"
+ }
+ , 
+ {
+    "component":  "PRS_ID_LVM020"
+ ,     "endpoint":  "form/search"
+ ,     "triggerId":  "57333"
+ ,     "DBFunctionName":  "bsh$tp_ui.get_ts_lov_data"
+ }
+ , 
+ {
+    "component":  "REPLACING_PRS_ID_LVM020"
+ ,     "inputParams":  ["PRS_ID_LVM020"]
+ ,     "endpoint":  "form/search"
+ ,     "triggerId":  "57334"
+ ,     "DBFunctionName":  "bsh$tp_ui.get_ts_lov_data"
+ }
+  ]
+}
