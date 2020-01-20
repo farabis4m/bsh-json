@@ -1,0 +1,103 @@
+{
+  "data": {
+    "forms": [
+      {
+        "key": "P_EMPLOYEE",
+        "tag": "P_EMPLOYEE_62471",
+        "title": "Employee",
+        "type": "control_Dropdown",
+        "orientation": "horizontal",
+        "selectedValue": {
+          "code": "",
+          "description": ""
+        },
+        "hidden": false,
+        "required": false,
+        "placeholder": "Select ...",
+        "validations": [],
+        "options": [
+          {
+            "code": "88990",
+            "description": "Fname3 Lname3"
+          }
+        ],
+        "multiselect": false
+      },
+      {
+        "key": "ELMNT_ID",
+        "tag": "ELMNT_ID_62476",
+        "title": "Loan Type",
+        "type": "control_Dropdown",
+        "orientation": "horizontal",
+        "selectedValue": {
+          "code": "",
+          "description": ""
+        },
+        "hidden": false,
+        "required": false,
+        "placeholder": "Select ...",
+        "validations": [],
+        "options": [
+          {
+            "code": "27191",
+            "description": "Marriage Loan Instalment"
+          },
+          {
+            "code": "27269",
+            "description": "Salary Advance Loan"
+          }
+        ],
+        "multiselect": false
+      },
+      {
+        "key": "FROM_DATE",
+        "tag": "FROM_DATE_62472",
+        "title": "Start date",
+        "type": "control_calendar",
+        "orientation": "horizontal",
+        "value": "",
+        "hidden": false,
+        "required": false,
+        "placeholder": "Select ...",
+        "dateFormat": "dd-MM-yyyy",
+        "minDate": "19-01-2019",
+        "maxDate": "19-01-2021",
+        "validations": [],
+        "multiselect": false
+      },
+      {
+        "key": "TO_DATE",
+        "tag": "TO_DATE_62474",
+        "title": "To Date",
+        "type": "control_calendar",
+        "orientation": "horizontal",
+        "value": "",
+        "hidden": false,
+        "required": false,
+        "placeholder": "Select ...",
+        "dateFormat": "dd-MM-yyyy",
+        "minDate": "19-01-2019",
+        "maxDate": "19-01-2021",
+        "validations": [],
+        "multiselect": false
+      },
+      {
+        "key": "P_LAST_PAY_DATE",
+        "tag": "P_LAST_PAY_DATE_62523",
+        "title": "Last Deduction Date",
+        "type": "control_calendar",
+        "orientation": "horizontal",
+        "value": "",
+        "hidden": false,
+        "required": false,
+        "placeholder": "Select ...",
+        "dateFormat": "dd-MM-yyyy",
+        "minDate": "19-01-2019",
+        "maxDate": "19-01-2021",
+        "validations": [],
+        "multiselect": false
+      }
+    ]
+  },
+  "status": "SUCCESS"
+}

@@ -1,0 +1,91 @@
+{
+  "data": {
+    "forms": [
+      {
+        "key": "P_EMP_NO",
+        "tag": "P_EMP_NO_61900",
+        "title": "Employee",
+        "type": "control_Dropdown",
+        "orientation": "horizontal",
+        "selectedValue": {
+          "code": "",
+          "description": ""
+        },
+        "hidden": false,
+        "required": false,
+        "placeholder": "Select ...",
+        "validations": [],
+        "options": [
+          {
+            "code": "88990",
+            "description": "Fname3 Lname3"
+          }
+        ],
+        "multiselect": false
+      },
+      {
+        "key": "P_OVT_TYPE",
+        "tag": "P_OVT_TYPE_61901",
+        "title": "Overtime Type",
+        "type": "control_Dropdown",
+        "orientation": "horizontal",
+        "selectedValue": {
+          "code": "",
+          "description": ""
+        },
+        "hidden": false,
+        "required": false,
+        "placeholder": "Select ...",
+        "validations": [],
+        "options": [
+          {
+            "code": "8912",
+            "description": "Normal Overtime"
+          },
+          {
+            "code": "9510",
+            "description": "Premium Overtime"
+          },
+          {
+            "code": "9512",
+            "description": "Special Overtime"
+          }
+        ],
+        "multiselect": false
+      },
+      {
+        "key": "P_FROM_DATE",
+        "tag": "P_FROM_DATE_61898",
+        "title": "From Date",
+        "type": "control_calendar",
+        "orientation": "horizontal",
+        "value": "",
+        "hidden": false,
+        "required": false,
+        "placeholder": "Select ...",
+        "dateFormat": "dd-MM-yyyy",
+        "minDate": "19-01-2019",
+        "maxDate": "19-01-2021",
+        "validations": [],
+        "multiselect": false
+      },
+      {
+        "key": "P_TO_DATE",
+        "tag": "P_TO_DATE_61899",
+        "title": "To Date",
+        "type": "control_calendar",
+        "orientation": "horizontal",
+        "value": "",
+        "hidden": false,
+        "required": false,
+        "placeholder": "Select ...",
+        "dateFormat": "dd-MM-yyyy",
+        "minDate": "19-01-2019",
+        "maxDate": "19-01-2021",
+        "validations": [],
+        "multiselect": false
+      }
+    ]
+  },
+  "status": "SUCCESS"
+}

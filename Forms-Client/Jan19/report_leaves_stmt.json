@@ -1,0 +1,107 @@
+{
+  "data": {
+    "forms": [
+      {
+        "key": "P_EMP_NO",
+        "tag": "P_EMP_NO_56754",
+        "title": "Employee#",
+        "type": "control_Dropdown",
+        "orientation": "horizontal",
+        "selectedValue": {
+          "code": "",
+          "description": ""
+        },
+        "hidden": false,
+        "required": false,
+        "placeholder": "Select ...",
+        "validations": [],
+        "options": [
+          {
+            "code": "10880002",
+            "description": "Fname3 Lname3"
+          }
+        ],
+        "multiselect": false
+      },
+      {
+        "key": "P_LEAVE_TYPE",
+        "tag": "P_LEAVE_TYPE_56755",
+        "title": "Leave Type",
+        "type": "control_Dropdown",
+        "orientation": "horizontal",
+        "selectedValue": {
+          "code": "",
+          "description": ""
+        },
+        "hidden": false,
+        "required": false,
+        "placeholder": "Select ...",
+        "validations": [],
+        "options": [
+          {
+            "code": "16208",
+            "description": "Annual Leave"
+          },
+          {
+            "code": "26258",
+            "description": "Haj Leave"
+          },
+          {
+            "code": "16209",
+            "description": "Sick Leave"
+          },
+          {
+            "code": "27268",
+            "description": "Unpaid Leave"
+          }
+        ],
+        "multiselect": false
+      },
+      {
+        "key": "P_LEAVE_DATE",
+        "tag": "P_LEAVE_DATE_56753",
+        "title": "From Date",
+        "type": "control_calendar",
+        "orientation": "horizontal",
+        "value": "",
+        "hidden": false,
+        "required": true,
+        "placeholder": "Select ...",
+        "dateFormat": "dd-MM-yyyy",
+        "minDate": "19-01-2019",
+        "maxDate": "19-01-2021",
+        "validations": [
+          {
+            "error": "Field is required",
+            "rule": "required",
+            "value": null
+          }
+        ],
+        "multiselect": false
+      },
+      {
+        "key": "P_TILL_DATE",
+        "tag": "P_TILL_DATE_62212",
+        "title": "To Date",
+        "type": "control_calendar",
+        "orientation": "horizontal",
+        "value": "",
+        "hidden": false,
+        "required": true,
+        "placeholder": "Select ...",
+        "dateFormat": "dd-MM-yyyy",
+        "minDate": "19-01-2019",
+        "maxDate": "19-01-2021",
+        "validations": [
+          {
+            "error": "Field is required",
+            "rule": "required",
+            "value": null
+          }
+        ],
+        "multiselect": false
+      }
+    ]
+  },
+  "status": "SUCCESS"
+}
