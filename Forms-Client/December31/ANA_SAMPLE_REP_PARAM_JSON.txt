@@ -1,0 +1,1717 @@
+{
+"forms": [ 
+{
+    "key":  "P_BALANCE_CALC_DATE"
+ ,     "tag":  "SIGNED_SEAT_DESC_12701"
+ ,     "title":  "Balance Date"
+ ,     "type":  "control_calendar"
+ ,     "value":  ""
+ ,     "placeholder":  "Select ..."
+ ,     "orientation":  "horizontal"
+ ,     "hidden":  false
+ ,     "required":  true
+ ,      "validations": [
+    {
+          "error": "Field is required",
+          "rule": "required"
+        }
+        ]
+ ,     "dateFormat":  "dd-MM-yyyy"
+ ,     "minDate":  "31-12-2018"
+ ,     "maxDate":  "31-12-2020"
+}
+
+
+,{
+    "key":  "P_EMPLOYEE"
+ ,     "tag":  "INSTITUTE_DESC_TRN70"
+ ,     "title":  "Employee #"
+ ,     "type":  "control_EditText"
+ ,     "value":  ""
+ ,     "placeholder":  "Select ..."
+ ,     "orientation":  "horizontal"
+ ,     "hidden":  false
+ ,     "required":  false
+ ,      "validations": [
+  {
+          "error": "Max length of field Exceeded",
+          "rule": "maxLength",
+          "value": 200
+        }
+         ]
+ ,     "maxLength":  200
+ ,     "textDirection":  "rtl"
+ ,     "inputType":  "alphanumeric"
+}
+
+
+,{
+    "key":  "P_ORGANIZATION"
+ ,     "tag":  "GRADE_DESC_N_TRN70"
+ ,     "title":  "Organization"
+ ,     "type":  "control_Dropdown"
+ ,     "selectedValue":  {"code": "","description": ""}
+ ,     "placeholder":  "Select ..."
+ ,     "orientation":  "horizontal"
+ ,     "hidden":  false
+ ,     "required":  false
+ ,      "validations": [
+    ]
+ ,      "options": [
+  
+        {
+          "code": "4912",
+          "description": "Al Nabooda Automobiles L.L.C"
+        }
+     ,  
+        {
+          "code": "5173",
+          "description": "BSH UAE"
+        }
+         ]}
+
+
+,{
+    "key":  "P_UNIT_CODE"
+ ,     "tag":  "EFFECTIVE_END_DATE_53510"
+ ,     "title":  "Department"
+ ,     "type":  "control_Dropdown"
+ ,     "selectedValue":  {"code": "","description": ""}
+ ,     "placeholder":  "Select ..."
+ ,     "orientation":  "horizontal"
+ ,     "hidden":  false
+ ,     "required":  false
+ ,      "validations": [
+    ]
+ ,      "options": [
+  
+        {
+          "code": "ANA",
+          "description": "Al Nabooda Automobiles L.L.C"
+        }
+     ,  
+        {
+          "code": "VBS",
+          "description": "BSH Business Services"
+        }
+     ,  
+        {
+          "code": "BSH",
+          "description": "BSH UAE"
+        }
+     ,  
+        {
+          "code": "CEO",
+          "description": "CEO Directorate"
+        }
+     ,  
+        {
+          "code": "CBU",
+          "description": "Consumer Business Unit"
+        }
+     ,  
+        {
+          "code": "CC",
+          "description": "Customer Care"
+        }
+     ,  
+        {
+          "code": "COPS",
+          "description": "Customer Operations"
+        }
+     ,  
+        {
+          "code": "EXT AFF",
+          "description": "External Affairs"
+        }
+     ,  
+        {
+          "code": "FIN",
+          "description": "Finance"
+        }
+     ,  
+        {
+          "code": "HR",
+          "description": "Human Resources"
+        }
+     ,  
+        {
+          "code": "LEGAL",
+          "description": "Legal & Regulatory"
+        }
+     ,  
+        {
+          "code": "MKTG",
+          "description": "Marketing"
+        }
+     ,  
+        {
+          "code": "STRATEGY",
+          "description": "Strategy"
+        }
+     ,  
+        {
+          "code": "TECH",
+          "description": "Technology"
+        }
+         ]}
+
+
+,{
+    "key":  "P_GRADE_CODE"
+ ,     "tag":  "SIGNED_ONBEHALF_PREFIX_12701"
+ ,     "title":  "Grade"
+ ,     "type":  "control_Dropdown"
+ ,     "selectedValue":  {"code": "","description": ""}
+ ,     "placeholder":  "Select ..."
+ ,     "orientation":  "horizontal"
+ ,     "hidden":  false
+ ,     "required":  false
+ ,      "validations": [
+    ]
+ ,      "options": [
+  
+        {
+          "code": "GRADE6",
+          "description": "GRADE 6"
+        }
+     ,  
+        {
+          "code": "GRADE6+",
+          "description": "GRADE 6+"
+        }
+     ,  
+        {
+          "code": "GRADE11+",
+          "description": "GRADE11+"
+        }
+     ,  
+        {
+          "code": "GRADE03",
+          "description": "GRADE03"
+        }
+     ,  
+        {
+          "code": "GRADE04",
+          "description": "GRADE04"
+        }
+     ,  
+        {
+          "code": "GRADE05",
+          "description": "GRADE05"
+        }
+     ,  
+        {
+          "code": "GRADE06",
+          "description": "GRADE06"
+        }
+     ,  
+        {
+          "code": "GRADE07",
+          "description": "GRADE07"
+        }
+     ,  
+        {
+          "code": "GRADE07+",
+          "description": "GRADE07+"
+        }
+     ,  
+        {
+          "code": "GRADE08",
+          "description": "GRADE08"
+        }
+     ,  
+        {
+          "code": "GRADE08+",
+          "description": "GRADE08+"
+        }
+     ,  
+        {
+          "code": "GRADE09",
+          "description": "GRADE09"
+        }
+     ,  
+        {
+          "code": "GRADE09+",
+          "description": "GRADE09+"
+        }
+     ,  
+        {
+          "code": "GRADE10",
+          "description": "GRADE10"
+        }
+     ,  
+        {
+          "code": "GRADE10+",
+          "description": "GRADE10+"
+        }
+     ,  
+        {
+          "code": "GRADE11",
+          "description": "GRADE11"
+        }
+     ,  
+        {
+          "code": "GRADE12",
+          "description": "GRADE12"
+        }
+     ,  
+        {
+          "code": "GRADE12+",
+          "description": "GRADE12+"
+        }
+     ,  
+        {
+          "code": "GRADE13",
+          "description": "GRADE13"
+        }
+     ,  
+        {
+          "code": "GRADE13+",
+          "description": "GRADE13+"
+        }
+     ,  
+        {
+          "code": "GRADE14",
+          "description": "GRADE14"
+        }
+     ,  
+        {
+          "code": "GRADE14+",
+          "description": "GRADE14+"
+        }
+     ,  
+        {
+          "code": "GRADE15",
+          "description": "GRADE15"
+        }
+     ,  
+        {
+          "code": "GRADE15+",
+          "description": "GRADE15+"
+        }
+     ,  
+        {
+          "code": "GRADE16",
+          "description": "GRADE16"
+        }
+     ,  
+        {
+          "code": "GRADE17",
+          "description": "GRADE17"
+        }
+     ,  
+        {
+          "code": "GRADE18",
+          "description": "GRADE18"
+        }
+     ,  
+        {
+          "code": "GRADE19",
+          "description": "GRADE19"
+        }
+         ]}
+
+
+,{
+    "key":  "P_REGION_CODE"
+ ,     "tag":  "BSH_SPRV_GROUPS_1"
+ ,     "title":  "Department Class"
+ ,     "type":  "control_Dropdown"
+ ,     "selectedValue":  {"code": "","description": ""}
+ ,     "placeholder":  "Select ..."
+ ,     "orientation":  "horizontal"
+ ,     "hidden":  false
+ ,     "required":  false
+ ,      "validations": [
+    ]
+ ,      "options": [
+  
+        {
+          "code": "1",
+          "description": "Other"
+        }
+     ,  
+        {
+          "code": "5",
+          "description": "5 working days/week"
+        }
+     ,  
+        {
+          "code": "6",
+          "description": "6 working days/week"
+        }
+         ]}
+
+
+,{
+    "key":  "P_FIN_STAFF_CATEGORY"
+ ,     "tag":  "LAST_UPDATE_DATE_53510"
+ ,     "title":  "GL Class"
+ ,     "type":  "control_Dropdown"
+ ,     "selectedValue":  {"code": "","description": ""}
+ ,     "placeholder":  "Select ..."
+ ,     "orientation":  "horizontal"
+ ,     "hidden":  false
+ ,     "required":  false
+ ,      "validations": [
+    ]
+ ,      "options": [
+    ]}
+
+
+,{
+    "key":  "P_LEAVE_TYPE"
+ ,     "tag":  "NAME_53510"
+ ,     "title":  "Leave Type"
+ ,     "type":  "control_Dropdown"
+ ,     "selectedValue":  {"code": "","description": ""}
+ ,     "placeholder":  "Select ..."
+ ,     "orientation":  "horizontal"
+ ,     "hidden":  false
+ ,     "required":  false
+ ,      "validations": [
+    ]
+ ,      "options": [
+  
+        {
+          "code": "LV4-1",
+          "description": "LV4-1...Annual Leave"
+        }
+     ,  
+        {
+          "code": "LV4-2",
+          "description": "LV4-2...Sick Leave"
+        }
+     ,  
+        {
+          "code": "LV4-3",
+          "description": "LV4-3...Unpaid Sick Leave"
+        }
+     ,  
+        {
+          "code": "LV4-4",
+          "description": "LV4-4...Half Paid Sick Leave"
+        }
+     ,  
+        {
+          "code": "LV4-5",
+          "description": "LV4-5...Haj Leave"
+        }
+     ,  
+        {
+          "code": "LV4-6",
+          "description": "LV4-6...Unpaid Leave"
+        }
+         ]}
+
+
+,{
+    "key":  "P_NATIONALITY_CODE"
+ ,     "tag":  "ID_53510"
+ ,     "title":  "Nationality"
+ ,     "type":  "control_Dropdown"
+ ,     "selectedValue":  {"code": "","description": ""}
+ ,     "placeholder":  "Select ..."
+ ,     "orientation":  "horizontal"
+ ,     "hidden":  false
+ ,     "required":  false
+ ,      "validations": [
+    ]
+ ,      "options": [
+  
+        {
+          "code": "AD",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "AE",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "AF",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "AG",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "AI",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "AL",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "AM",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "AN",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "AO",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "AQ",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "AR",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "AS",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "AT",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "AU",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "AW",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "AX",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "AZ",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "BA",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "BB",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "BD",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "BE",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "BF",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "BG",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "BH",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "BI",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "BJ",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "BL",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "BM",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "BN",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "BO",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "BR",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "BS",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "BT",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "BV",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "BW",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "BY",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "BZ",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "CA",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "CC",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "CD",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "CF",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "CG",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "CH",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "CI",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "CK",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "CL",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "CM",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "CN",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "CO",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "CR",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "CU",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "CV",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "CX",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "CY",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "CZ",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "DE",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "DJ",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "DK",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "DM",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "DO",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "DZ",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "EC",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "EE",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "EG",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "EH",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "ER",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "ES",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "ET",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "FI",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "FJ",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "FK",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "FM",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "FO",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "FR",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "GA",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "GB",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "GD",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "GE",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "GF",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "GG",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "GH",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "GI",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "GL",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "GM",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "GN",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "GP",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "GQ",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "GR",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "GS",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "GT",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "GU",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "GW",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "GY",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "HK",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "HM",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "HN",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "HR",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "HT",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "HU",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "ID",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "IE",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "IM",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "IN",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "IO",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "IQ",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "IR",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "IS",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "IT",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "JE",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "JM",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "JO",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "JP",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "KE",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "KG",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "KH",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "KI",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "KM",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "KN",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "KP",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "KR",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "KW",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "KY",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "KZ",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "LA",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "LB",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "LC",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "LI",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "LK",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "LR",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "LS",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "LT",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "LU",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "LV",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "LY",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "MA",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "MC",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "MD",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "ME",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "MF",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "MG",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "MH",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "MK",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "ML",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "MM",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "MN",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "MO",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "MP",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "MQ",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "MR",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "MS",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "MT",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "MU",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "MV",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "MW",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "MX",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "MY",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "MZ",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "NA",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "NC",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "NE",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "NF",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "NG",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "NI",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "NL",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "NO",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "NON",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "NP",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "NR",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "NU",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "NZ",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "OM",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "PA",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "PE",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "PF",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "PG",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "PH",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "PK",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "PL",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "PM",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "PN",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "PR",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "PS",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "PT",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "PW",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "PY",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "QA",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "RE",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "RO",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "RS",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "RU",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "RW",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "SA",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "SB",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "SC",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "SD",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "SE",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "SG",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "SH",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "SI",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "SJ",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "SK",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "SL",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "SM",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "SN",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "SO",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "SR",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "ST",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "SV",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "SY",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "SZ",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "TC",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "TD",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "TF",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "TG",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "TH",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "TK",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "TL",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "TM",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "TN",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "TO",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "TR",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "TT",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "TV",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "TW",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "TZ",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "UA",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "UG",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "UM",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "US",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "UY",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "UZ",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "VA",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "VC",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "VE",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "VG",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "VI",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "VN",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "VU",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "WF",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "WS",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "YE",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "YT",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "ZA",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "ZM",
+          "description": ""
+        }
+     ,  
+        {
+          "code": "ZW",
+          "description": ""
+        }
+         ]}
+
+
+,{
+    "key":  "P_EMPLOYMENT_TYPE"
+ ,     "tag":  "CODE_53510"
+ ,     "title":  "Contract Type"
+ ,     "type":  "control_Dropdown"
+ ,     "selectedValue":  {"code": "","description": ""}
+ ,     "placeholder":  "Select ..."
+ ,     "orientation":  "horizontal"
+ ,     "hidden":  false
+ ,     "required":  false
+ ,      "validations": [
+    ]
+ ,      "options": [
+  
+        {
+          "code": "2",
+          "description": "Temporary"
+        }
+     ,  
+        {
+          "code": "1",
+          "description": "Permanent"
+        }
+         ]}
+
+
+,{
+    "key":  "P_JOB_CODE"
+ ,     "tag":  "SIGNED_BY_PREFIX_12701"
+ ,     "title":  "Job"
+ ,     "type":  "control_Dropdown"
+ ,     "selectedValue":  {"code": "","description": ""}
+ ,     "placeholder":  "Select ..."
+ ,     "orientation":  "horizontal"
+ ,     "hidden":  false
+ ,     "required":  false
+ ,      "validations": [
+    ]
+ ,      "options": [
+  
+        {
+          "code": "STFL",
+          "description": "STAFF LEVEL"
+        }
+     ,  
+        {
+          "code": "MGRL",
+          "description": "MANAGERIAL LEVEL"
+        }
+     ,  
+        {
+          "code": "SUPL",
+          "description": "SUPERVIOSRY LEVEL"
+        }
+     ,  
+        {
+          "code": "EXEL",
+          "description": "EXECUTIVE LEVEL"
+        }
+     ,  
+        {
+          "code": "LNLL",
+          "description": "LINE LEVEL"
+        }
+         ]}
+
+
+]}

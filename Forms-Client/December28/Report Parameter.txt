@@ -1,0 +1,1693 @@
+{
+"forms": [ 
+{
+    "key":  "P_BALANCE_CALC_DATE"
+ ,     "tag":  "SIGNED_SEAT_DESC_12701"
+ ,     "title":  "Balance Date"
+ ,     "type":  "control_calendar"
+ ,     "value":  ""
+ ,     "placeholder":  "Select ..."
+ ,     "orientation":  "horizontal"
+ ,     "hidden":  false
+ ,     "required":  true
+ ,     "dateFormat":  "dd-MM-yyyy"
+ ,     "minDate":  "28-12-2018"
+ ,     "maxDate":  "28-12-2020"
+}
+
+
+,{
+    "key":  "P_EMPLOYEE"
+ ,     "tag":  "INSTITUTE_DESC_TRN70"
+ ,     "title":  "Employee #"
+ ,     "type":  "control_EditText"
+ ,     "value":  ""
+ ,     "placeholder":  "Select ..."
+ ,     "orientation":  "horizontal"
+ ,     "hidden":  false
+ ,     "required":  false
+ ,      "validations": [
+  {
+          "error": "Max length of field Exceeded",
+          "rule": "maxLength",
+          "value": "200"
+        }
+         ]
+ ,     "maxLength":  "200"
+ ,     "textDirection":  "rtl"
+ ,     "inputType":  "alphanumeric"
+}
+
+
+,{
+    "key":  "P_ORGANIZATION"
+ ,     "tag":  "GRADE_DESC_N_TRN70"
+ ,     "title":  "Organization"
+ ,     "type":  "control_Dropdown"
+ ,     "selectedValue":  {"code": "","description": ""}
+ ,     "placeholder":  "Select ..."
+ ,     "orientation":  "horizontal"
+ ,     "hidden":  false
+ ,     "required":  false
+ ,      "options": [
+  
+        {
+          "code": "4912",
+          "desc": "Al Nabooda Automobiles L.L.C"
+        }
+     ,  
+        {
+          "code": "5173",
+          "desc": "BSH UAE"
+        }
+         ]}
+
+
+,{
+    "key":  "P_UNIT_CODE"
+ ,     "tag":  "EFFECTIVE_END_DATE_53510"
+ ,     "title":  "Department"
+ ,     "type":  "control_Dropdown"
+ ,     "selectedValue":  {"code": "","description": ""}
+ ,     "placeholder":  "Select ..."
+ ,     "orientation":  "horizontal"
+ ,     "hidden":  false
+ ,     "required":  false
+ ,      "options": [
+  
+        {
+          "code": "ANA",
+          "desc": "Al Nabooda Automobiles L.L.C"
+        }
+     ,  
+        {
+          "code": "VBS",
+          "desc": "BSH Business Services"
+        }
+     ,  
+        {
+          "code": "BSH",
+          "desc": "BSH UAE"
+        }
+     ,  
+        {
+          "code": "CEO",
+          "desc": "CEO Directorate"
+        }
+     ,  
+        {
+          "code": "CBU",
+          "desc": "Consumer Business Unit"
+        }
+     ,  
+        {
+          "code": "CC",
+          "desc": "Customer Care"
+        }
+     ,  
+        {
+          "code": "COPS",
+          "desc": "Customer Operations"
+        }
+     ,  
+        {
+          "code": "EXT AFF",
+          "desc": "External Affairs"
+        }
+     ,  
+        {
+          "code": "FIN",
+          "desc": "Finance"
+        }
+     ,  
+        {
+          "code": "HR",
+          "desc": "Human Resources"
+        }
+     ,  
+        {
+          "code": "LEGAL",
+          "desc": "Legal & Regulatory"
+        }
+     ,  
+        {
+          "code": "MKTG",
+          "desc": "Marketing"
+        }
+     ,  
+        {
+          "code": "STRATEGY",
+          "desc": "Strategy"
+        }
+     ,  
+        {
+          "code": "TECH",
+          "desc": "Technology"
+        }
+         ]}
+
+
+,{
+    "key":  "P_GRADE_CODE"
+ ,     "tag":  "SIGNED_ONBEHALF_PREFIX_12701"
+ ,     "title":  "Grade"
+ ,     "type":  "control_Dropdown"
+ ,     "selectedValue":  {"code": "","description": ""}
+ ,     "placeholder":  "Select ..."
+ ,     "orientation":  "horizontal"
+ ,     "hidden":  false
+ ,     "required":  false
+ ,      "options": [
+  
+        {
+          "code": "GRADE6",
+          "desc": "GRADE 6"
+        }
+     ,  
+        {
+          "code": "GRADE6+",
+          "desc": "GRADE 6+"
+        }
+     ,  
+        {
+          "code": "GRADE11+",
+          "desc": "GRADE11+"
+        }
+     ,  
+        {
+          "code": "GRADE03",
+          "desc": "GRADE03"
+        }
+     ,  
+        {
+          "code": "GRADE04",
+          "desc": "GRADE04"
+        }
+     ,  
+        {
+          "code": "GRADE05",
+          "desc": "GRADE05"
+        }
+     ,  
+        {
+          "code": "GRADE06",
+          "desc": "GRADE06"
+        }
+     ,  
+        {
+          "code": "GRADE07",
+          "desc": "GRADE07"
+        }
+     ,  
+        {
+          "code": "GRADE07+",
+          "desc": "GRADE07+"
+        }
+     ,  
+        {
+          "code": "GRADE08",
+          "desc": "GRADE08"
+        }
+     ,  
+        {
+          "code": "GRADE08+",
+          "desc": "GRADE08+"
+        }
+     ,  
+        {
+          "code": "GRADE09",
+          "desc": "GRADE09"
+        }
+     ,  
+        {
+          "code": "GRADE09+",
+          "desc": "GRADE09+"
+        }
+     ,  
+        {
+          "code": "GRADE10",
+          "desc": "GRADE10"
+        }
+     ,  
+        {
+          "code": "GRADE10+",
+          "desc": "GRADE10+"
+        }
+     ,  
+        {
+          "code": "GRADE11",
+          "desc": "GRADE11"
+        }
+     ,  
+        {
+          "code": "GRADE12",
+          "desc": "GRADE12"
+        }
+     ,  
+        {
+          "code": "GRADE12+",
+          "desc": "GRADE12+"
+        }
+     ,  
+        {
+          "code": "GRADE13",
+          "desc": "GRADE13"
+        }
+     ,  
+        {
+          "code": "GRADE13+",
+          "desc": "GRADE13+"
+        }
+     ,  
+        {
+          "code": "GRADE14",
+          "desc": "GRADE14"
+        }
+     ,  
+        {
+          "code": "GRADE14+",
+          "desc": "GRADE14+"
+        }
+     ,  
+        {
+          "code": "GRADE15",
+          "desc": "GRADE15"
+        }
+     ,  
+        {
+          "code": "GRADE15+",
+          "desc": "GRADE15+"
+        }
+     ,  
+        {
+          "code": "GRADE16",
+          "desc": "GRADE16"
+        }
+     ,  
+        {
+          "code": "GRADE17",
+          "desc": "GRADE17"
+        }
+     ,  
+        {
+          "code": "GRADE18",
+          "desc": "GRADE18"
+        }
+     ,  
+        {
+          "code": "GRADE19",
+          "desc": "GRADE19"
+        }
+         ]}
+
+
+,{
+    "key":  "P_REGION_CODE"
+ ,     "tag":  "BSH_SPRV_GROUPS_1"
+ ,     "title":  "Department Class"
+ ,     "type":  "control_Dropdown"
+ ,     "selectedValue":  {"code": "","description": ""}
+ ,     "placeholder":  "Select ..."
+ ,     "orientation":  "horizontal"
+ ,     "hidden":  false
+ ,     "required":  false
+ ,      "options": [
+  
+        {
+          "code": "1",
+          "desc": "Other"
+        }
+     ,  
+        {
+          "code": "5",
+          "desc": "5 working days/week"
+        }
+     ,  
+        {
+          "code": "6",
+          "desc": "6 working days/week"
+        }
+         ]}
+
+
+,{
+    "key":  "P_FIN_STAFF_CATEGORY"
+ ,     "tag":  "LAST_UPDATE_DATE_53510"
+ ,     "title":  "GL Class"
+ ,     "type":  "control_Dropdown"
+ ,     "selectedValue":  {"code": "","description": ""}
+ ,     "placeholder":  "Select ..."
+ ,     "orientation":  "horizontal"
+ ,     "hidden":  false
+ ,     "required":  false
+ ,      "options": [
+    ]}
+
+
+,{
+    "key":  "P_LEAVE_TYPE"
+ ,     "tag":  "NAME_53510"
+ ,     "title":  "Leave Type"
+ ,     "type":  "control_Dropdown"
+ ,     "selectedValue":  {"code": "","description": ""}
+ ,     "placeholder":  "Select ..."
+ ,     "orientation":  "horizontal"
+ ,     "hidden":  false
+ ,     "required":  false
+ ,      "options": [
+  
+        {
+          "code": "LV4-1",
+          "desc": "LV4-1...Annual Leave"
+        }
+     ,  
+        {
+          "code": "LV4-2",
+          "desc": "LV4-2...Sick Leave"
+        }
+     ,  
+        {
+          "code": "LV4-3",
+          "desc": "LV4-3...Unpaid Sick Leave"
+        }
+     ,  
+        {
+          "code": "LV4-4",
+          "desc": "LV4-4...Half Paid Sick Leave"
+        }
+     ,  
+        {
+          "code": "LV4-5",
+          "desc": "LV4-5...Haj Leave"
+        }
+     ,  
+        {
+          "code": "LV4-6",
+          "desc": "LV4-6...Unpaid Leave"
+        }
+         ]}
+
+
+,{
+    "key":  "P_NATIONALITY_CODE"
+ ,     "tag":  "ID_53510"
+ ,     "title":  "Nationality"
+ ,     "type":  "control_Dropdown"
+ ,     "selectedValue":  {"code": "","description": ""}
+ ,     "placeholder":  "Select ..."
+ ,     "orientation":  "horizontal"
+ ,     "hidden":  false
+ ,     "required":  false
+ ,      "options": [
+  
+        {
+          "code": "AD",
+          "desc": "Andorra"
+        }
+     ,  
+        {
+          "code": "AE",
+          "desc": "United Arab Emirates"
+        }
+     ,  
+        {
+          "code": "AF",
+          "desc": "Afghanistan"
+        }
+     ,  
+        {
+          "code": "AG",
+          "desc": "Antigua and Barbuda"
+        }
+     ,  
+        {
+          "code": "AI",
+          "desc": "ANGUILLA"
+        }
+     ,  
+        {
+          "code": "AL",
+          "desc": "Albania"
+        }
+     ,  
+        {
+          "code": "AM",
+          "desc": "Armenia"
+        }
+     ,  
+        {
+          "code": "AN",
+          "desc": "NETHERLANDS ANTILLES"
+        }
+     ,  
+        {
+          "code": "AO",
+          "desc": "Angola"
+        }
+     ,  
+        {
+          "code": "AQ",
+          "desc": "ANTARCTICA"
+        }
+     ,  
+        {
+          "code": "AR",
+          "desc": "Argentina"
+        }
+     ,  
+        {
+          "code": "AS",
+          "desc": "AMERICAN SAMOA"
+        }
+     ,  
+        {
+          "code": "AT",
+          "desc": "Austria"
+        }
+     ,  
+        {
+          "code": "AU",
+          "desc": "Australia"
+        }
+     ,  
+        {
+          "code": "AW",
+          "desc": "ARUBA"
+        }
+     ,  
+        {
+          "code": "AX",
+          "desc": "ALAND ISLANDS"
+        }
+     ,  
+        {
+          "code": "AZ",
+          "desc": "Azerbaijan"
+        }
+     ,  
+        {
+          "code": "BA",
+          "desc": "Bosnia and Herzegovina"
+        }
+     ,  
+        {
+          "code": "BB",
+          "desc": "Barbados"
+        }
+     ,  
+        {
+          "code": "BD",
+          "desc": "Bangladesh"
+        }
+     ,  
+        {
+          "code": "BE",
+          "desc": "Belgium"
+        }
+     ,  
+        {
+          "code": "BF",
+          "desc": "Burkina Faso"
+        }
+     ,  
+        {
+          "code": "BG",
+          "desc": "Bulgaria"
+        }
+     ,  
+        {
+          "code": "BH",
+          "desc": "Bahrain"
+        }
+     ,  
+        {
+          "code": "BI",
+          "desc": "Burundi"
+        }
+     ,  
+        {
+          "code": "BJ",
+          "desc": "Benin"
+        }
+     ,  
+        {
+          "code": "BL",
+          "desc": "SAINT BARTH&Eacute;LEMY"
+        }
+     ,  
+        {
+          "code": "BM",
+          "desc": "BERMUDA"
+        }
+     ,  
+        {
+          "code": "BN",
+          "desc": "Brunei"
+        }
+     ,  
+        {
+          "code": "BO",
+          "desc": "Bolivia"
+        }
+     ,  
+        {
+          "code": "BR",
+          "desc": "Brazil"
+        }
+     ,  
+        {
+          "code": "BS",
+          "desc": "Bahamas"
+        }
+     ,  
+        {
+          "code": "BT",
+          "desc": "Bhutan"
+        }
+     ,  
+        {
+          "code": "BV",
+          "desc": "BOUVET ISLAND"
+        }
+     ,  
+        {
+          "code": "BW",
+          "desc": "Botswana"
+        }
+     ,  
+        {
+          "code": "BY",
+          "desc": "Belarus"
+        }
+     ,  
+        {
+          "code": "BZ",
+          "desc": "Belize"
+        }
+     ,  
+        {
+          "code": "CA",
+          "desc": "Canada"
+        }
+     ,  
+        {
+          "code": "CC",
+          "desc": "COCOS (KEELING) ISLANDS"
+        }
+     ,  
+        {
+          "code": "CD",
+          "desc": "CONGO, THE DEMOCRATIC REPUBLIC OF THE"
+        }
+     ,  
+        {
+          "code": "CF",
+          "desc": "Central African Republic"
+        }
+     ,  
+        {
+          "code": "CG",
+          "desc": "Congo"
+        }
+     ,  
+        {
+          "code": "CH",
+          "desc": "Switzerland"
+        }
+     ,  
+        {
+          "code": "CI",
+          "desc": "Cote d Ivoire"
+        }
+     ,  
+        {
+          "code": "CK",
+          "desc": "COOK ISLANDS"
+        }
+     ,  
+        {
+          "code": "CL",
+          "desc": "Chile"
+        }
+     ,  
+        {
+          "code": "CM",
+          "desc": "Cameroon"
+        }
+     ,  
+        {
+          "code": "CN",
+          "desc": "China"
+        }
+     ,  
+        {
+          "code": "CO",
+          "desc": "Colombia"
+        }
+     ,  
+        {
+          "code": "CR",
+          "desc": "Costa Rica"
+        }
+     ,  
+        {
+          "code": "CU",
+          "desc": "Cuba"
+        }
+     ,  
+        {
+          "code": "CV",
+          "desc": "Cape Verde"
+        }
+     ,  
+        {
+          "code": "CX",
+          "desc": "CHRISTMAS ISLAND"
+        }
+     ,  
+        {
+          "code": "CY",
+          "desc": "Cyprus"
+        }
+     ,  
+        {
+          "code": "CZ",
+          "desc": "Czech Republic"
+        }
+     ,  
+        {
+          "code": "DE",
+          "desc": "Germany"
+        }
+     ,  
+        {
+          "code": "DJ",
+          "desc": "Djibouti"
+        }
+     ,  
+        {
+          "code": "DK",
+          "desc": "Denmark"
+        }
+     ,  
+        {
+          "code": "DM",
+          "desc": "Dominica"
+        }
+     ,  
+        {
+          "code": "DO",
+          "desc": "Dominican Republic"
+        }
+     ,  
+        {
+          "code": "DZ",
+          "desc": "Algeria"
+        }
+     ,  
+        {
+          "code": "EC",
+          "desc": "Ecuador"
+        }
+     ,  
+        {
+          "code": "EE",
+          "desc": "Estonia"
+        }
+     ,  
+        {
+          "code": "EG",
+          "desc": "Egypt"
+        }
+     ,  
+        {
+          "code": "EH",
+          "desc": "SAHARA OCCIDENTAL"
+        }
+     ,  
+        {
+          "code": "ER",
+          "desc": "Eritrea"
+        }
+     ,  
+        {
+          "code": "ES",
+          "desc": "Spain"
+        }
+     ,  
+        {
+          "code": "ET",
+          "desc": "Ethiopia"
+        }
+     ,  
+        {
+          "code": "FI",
+          "desc": "Finland"
+        }
+     ,  
+        {
+          "code": "FJ",
+          "desc": "Fiji"
+        }
+     ,  
+        {
+          "code": "FK",
+          "desc": "FALKLAND ISLANDS (MALVINAS)"
+        }
+     ,  
+        {
+          "code": "FM",
+          "desc": "Federated States of Micronesia"
+        }
+     ,  
+        {
+          "code": "FO",
+          "desc": "FAROE ISLANDS"
+        }
+     ,  
+        {
+          "code": "FR",
+          "desc": "France"
+        }
+     ,  
+        {
+          "code": "GA",
+          "desc": "Gabon"
+        }
+     ,  
+        {
+          "code": "GB",
+          "desc": "United Kingdom"
+        }
+     ,  
+        {
+          "code": "GD",
+          "desc": "Grenada"
+        }
+     ,  
+        {
+          "code": "GE",
+          "desc": "Georgia"
+        }
+     ,  
+        {
+          "code": "GF",
+          "desc": "FRENCH GUIANA"
+        }
+     ,  
+        {
+          "code": "GG",
+          "desc": "GUERNSEY"
+        }
+     ,  
+        {
+          "code": "GH",
+          "desc": "Ghana"
+        }
+     ,  
+        {
+          "code": "GI",
+          "desc": "GIBRALTAR"
+        }
+     ,  
+        {
+          "code": "GL",
+          "desc": "GREENLAND"
+        }
+     ,  
+        {
+          "code": "GM",
+          "desc": "Gambia"
+        }
+     ,  
+        {
+          "code": "GN",
+          "desc": "Guinea"
+        }
+     ,  
+        {
+          "code": "GP",
+          "desc": "GUADELOUPE"
+        }
+     ,  
+        {
+          "code": "GQ",
+          "desc": "Equatorial Guinea"
+        }
+     ,  
+        {
+          "code": "GR",
+          "desc": "Greece"
+        }
+     ,  
+        {
+          "code": "GS",
+          "desc": "SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS"
+        }
+     ,  
+        {
+          "code": "GT",
+          "desc": "Guatemala"
+        }
+     ,  
+        {
+          "code": "GU",
+          "desc": "GUAM"
+        }
+     ,  
+        {
+          "code": "GW",
+          "desc": "Guinea-Bissau"
+        }
+     ,  
+        {
+          "code": "GY",
+          "desc": "Guyana"
+        }
+     ,  
+        {
+          "code": "HK",
+          "desc": "HONG KONG"
+        }
+     ,  
+        {
+          "code": "HM",
+          "desc": "HEARD ISLAND AND MCDONALD ISLANDS"
+        }
+     ,  
+        {
+          "code": "HN",
+          "desc": "Honduras"
+        }
+     ,  
+        {
+          "code": "HR",
+          "desc": "Croatia"
+        }
+     ,  
+        {
+          "code": "HT",
+          "desc": "Haiti"
+        }
+     ,  
+        {
+          "code": "HU",
+          "desc": "Hungary"
+        }
+     ,  
+        {
+          "code": "ID",
+          "desc": "Indonesia"
+        }
+     ,  
+        {
+          "code": "IE",
+          "desc": "Ireland"
+        }
+     ,  
+        {
+          "code": "IM",
+          "desc": "ISLE OF MAN"
+        }
+     ,  
+        {
+          "code": "IN",
+          "desc": "India"
+        }
+     ,  
+        {
+          "code": "IO",
+          "desc": "BRITISH INDIAN OCEAN TERRITORY"
+        }
+     ,  
+        {
+          "code": "IQ",
+          "desc": "Iraq"
+        }
+     ,  
+        {
+          "code": "IR",
+          "desc": "Iran"
+        }
+     ,  
+        {
+          "code": "IS",
+          "desc": "Iceland"
+        }
+     ,  
+        {
+          "code": "IT",
+          "desc": "Italy"
+        }
+     ,  
+        {
+          "code": "JE",
+          "desc": "JERSEY"
+        }
+     ,  
+        {
+          "code": "JM",
+          "desc": "Jamaica"
+        }
+     ,  
+        {
+          "code": "JO",
+          "desc": "Jordan"
+        }
+     ,  
+        {
+          "code": "JP",
+          "desc": "Japan"
+        }
+     ,  
+        {
+          "code": "KE",
+          "desc": "Kenya"
+        }
+     ,  
+        {
+          "code": "KG",
+          "desc": "Kyrgyz Republic"
+        }
+     ,  
+        {
+          "code": "KH",
+          "desc": "Cambodia"
+        }
+     ,  
+        {
+          "code": "KI",
+          "desc": "Kiribati"
+        }
+     ,  
+        {
+          "code": "KM",
+          "desc": "Comoros"
+        }
+     ,  
+        {
+          "code": "KN",
+          "desc": "Saint Kitts and Nevis"
+        }
+     ,  
+        {
+          "code": "KP",
+          "desc": "Korea, North"
+        }
+     ,  
+        {
+          "code": "KR",
+          "desc": "Korea, South"
+        }
+     ,  
+        {
+          "code": "KW",
+          "desc": "Kuwait"
+        }
+     ,  
+        {
+          "code": "KY",
+          "desc": "CAYMAN ISLANDS"
+        }
+     ,  
+        {
+          "code": "KZ",
+          "desc": "Kazakhstan"
+        }
+     ,  
+        {
+          "code": "LA",
+          "desc": "Laos"
+        }
+     ,  
+        {
+          "code": "LB",
+          "desc": "Lebanon"
+        }
+     ,  
+        {
+          "code": "LC",
+          "desc": "Saint Lucia"
+        }
+     ,  
+        {
+          "code": "LI",
+          "desc": "Liechtenstein"
+        }
+     ,  
+        {
+          "code": "LK",
+          "desc": "Sri Lanka"
+        }
+     ,  
+        {
+          "code": "LR",
+          "desc": "Liberia"
+        }
+     ,  
+        {
+          "code": "LS",
+          "desc": "Lesotho"
+        }
+     ,  
+        {
+          "code": "LT",
+          "desc": "Lithuania"
+        }
+     ,  
+        {
+          "code": "LU",
+          "desc": "Luxembourg"
+        }
+     ,  
+        {
+          "code": "LV",
+          "desc": "Latvia"
+        }
+     ,  
+        {
+          "code": "LY",
+          "desc": "Libya"
+        }
+     ,  
+        {
+          "code": "MA",
+          "desc": "Morocco"
+        }
+     ,  
+        {
+          "code": "MC",
+          "desc": "Monaco"
+        }
+     ,  
+        {
+          "code": "MD",
+          "desc": "Moldova"
+        }
+     ,  
+        {
+          "code": "ME",
+          "desc": "MONTENEGRO"
+        }
+     ,  
+        {
+          "code": "MF",
+          "desc": "SAINT MARTIN"
+        }
+     ,  
+        {
+          "code": "MG",
+          "desc": "Madagascar"
+        }
+     ,  
+        {
+          "code": "MH",
+          "desc": "Marshall Islands"
+        }
+     ,  
+        {
+          "code": "MK",
+          "desc": "Macedonia"
+        }
+     ,  
+        {
+          "code": "ML",
+          "desc": "Mali"
+        }
+     ,  
+        {
+          "code": "MM",
+          "desc": "Myanmar (Burma)"
+        }
+     ,  
+        {
+          "code": "MN",
+          "desc": "Mongolia"
+        }
+     ,  
+        {
+          "code": "MO",
+          "desc": "MACAO"
+        }
+     ,  
+        {
+          "code": "MP",
+          "desc": "NORTHERN MARIANA ISLANDS"
+        }
+     ,  
+        {
+          "code": "MQ",
+          "desc": "MARTINIQUE"
+        }
+     ,  
+        {
+          "code": "MR",
+          "desc": "Mauritania"
+        }
+     ,  
+        {
+          "code": "MS",
+          "desc": "MONTSERRAT"
+        }
+     ,  
+        {
+          "code": "MT",
+          "desc": "Malta"
+        }
+     ,  
+        {
+          "code": "MU",
+          "desc": "Mauritius"
+        }
+     ,  
+        {
+          "code": "MV",
+          "desc": "Maldives"
+        }
+     ,  
+        {
+          "code": "MW",
+          "desc": "Malawi"
+        }
+     ,  
+        {
+          "code": "MX",
+          "desc": "Mexico"
+        }
+     ,  
+        {
+          "code": "MY",
+          "desc": "Malaysia"
+        }
+     ,  
+        {
+          "code": "MZ",
+          "desc": "Mozambique"
+        }
+     ,  
+        {
+          "code": "NA",
+          "desc": "Namibia"
+        }
+     ,  
+        {
+          "code": "NC",
+          "desc": "NEW CALEDONIA"
+        }
+     ,  
+        {
+          "code": "NE",
+          "desc": "Niger"
+        }
+     ,  
+        {
+          "code": "NF",
+          "desc": "NORFOLK ISLAND"
+        }
+     ,  
+        {
+          "code": "NG",
+          "desc": "Nigeria"
+        }
+     ,  
+        {
+          "code": "NI",
+          "desc": "Nicaragua"
+        }
+     ,  
+        {
+          "code": "NL",
+          "desc": "Netherlands"
+        }
+     ,  
+        {
+          "code": "NO",
+          "desc": "Norway"
+        }
+     ,  
+        {
+          "code": "NON",
+          "desc": "Not Applicable"
+        }
+     ,  
+        {
+          "code": "NP",
+          "desc": "Nepal"
+        }
+     ,  
+        {
+          "code": "NR",
+          "desc": "Nauru"
+        }
+     ,  
+        {
+          "code": "NU",
+          "desc": "NIUE"
+        }
+     ,  
+        {
+          "code": "NZ",
+          "desc": "New Zealand"
+        }
+     ,  
+        {
+          "code": "OM",
+          "desc": "Oman"
+        }
+     ,  
+        {
+          "code": "PA",
+          "desc": "Panama"
+        }
+     ,  
+        {
+          "code": "PE",
+          "desc": "Peru"
+        }
+     ,  
+        {
+          "code": "PF",
+          "desc": "FRENCH POLYNESIA"
+        }
+     ,  
+        {
+          "code": "PG",
+          "desc": "Papua New Guinea"
+        }
+     ,  
+        {
+          "code": "PH",
+          "desc": "Philippines"
+        }
+     ,  
+        {
+          "code": "PK",
+          "desc": "Pakistan"
+        }
+     ,  
+        {
+          "code": "PL",
+          "desc": "Poland"
+        }
+     ,  
+        {
+          "code": "PM",
+          "desc": "SAINT PIERRE AND MIQUELON"
+        }
+     ,  
+        {
+          "code": "PN",
+          "desc": "PITCAIRN"
+        }
+     ,  
+        {
+          "code": "PR",
+          "desc": "PUERTO RICO"
+        }
+     ,  
+        {
+          "code": "PS",
+          "desc": "Palestine"
+        }
+     ,  
+        {
+          "code": "PT",
+          "desc": "Portugal"
+        }
+     ,  
+        {
+          "code": "PW",
+          "desc": "Palau"
+        }
+     ,  
+        {
+          "code": "PY",
+          "desc": "Paraguay"
+        }
+     ,  
+        {
+          "code": "QA",
+          "desc": "Qatar"
+        }
+     ,  
+        {
+          "code": "RE",
+          "desc": "R&Eacute;UNION"
+        }
+     ,  
+        {
+          "code": "RO",
+          "desc": "Romania"
+        }
+     ,  
+        {
+          "code": "RS",
+          "desc": "Serbia and Montenegro"
+        }
+     ,  
+        {
+          "code": "RU",
+          "desc": "Russia"
+        }
+     ,  
+        {
+          "code": "RW",
+          "desc": "Rwanda"
+        }
+     ,  
+        {
+          "code": "SA",
+          "desc": "Saudi Arabia"
+        }
+     ,  
+        {
+          "code": "SB",
+          "desc": "Solomon Islands"
+        }
+     ,  
+        {
+          "code": "SC",
+          "desc": "Seychelles"
+        }
+     ,  
+        {
+          "code": "SD",
+          "desc": "Sudan"
+        }
+     ,  
+        {
+          "code": "SE",
+          "desc": "Sweden"
+        }
+     ,  
+        {
+          "code": "SG",
+          "desc": "Singapore"
+        }
+     ,  
+        {
+          "code": "SH",
+          "desc": "SAINT HELENA"
+        }
+     ,  
+        {
+          "code": "SI",
+          "desc": "Slovenia"
+        }
+     ,  
+        {
+          "code": "SJ",
+          "desc": "SVALBARD AND JAN MAYEN"
+        }
+     ,  
+        {
+          "code": "SK",
+          "desc": "Slovakia"
+        }
+     ,  
+        {
+          "code": "SL",
+          "desc": "Sierra Leone"
+        }
+     ,  
+        {
+          "code": "SM",
+          "desc": "San Marino"
+        }
+     ,  
+        {
+          "code": "SN",
+          "desc": "Senegal"
+        }
+     ,  
+        {
+          "code": "SO",
+          "desc": "Somalia"
+        }
+     ,  
+        {
+          "code": "SR",
+          "desc": "Suriname"
+        }
+     ,  
+        {
+          "code": "ST",
+          "desc": "Sao Tome and Principe"
+        }
+     ,  
+        {
+          "code": "SV",
+          "desc": "El Salvador"
+        }
+     ,  
+        {
+          "code": "SY",
+          "desc": "Syria"
+        }
+     ,  
+        {
+          "code": "SZ",
+          "desc": "Swaziland"
+        }
+     ,  
+        {
+          "code": "TC",
+          "desc": "TURKS AND CAICOS ISLANDS"
+        }
+     ,  
+        {
+          "code": "TD",
+          "desc": "Chad"
+        }
+     ,  
+        {
+          "code": "TF",
+          "desc": "FRENCH SOUTHERN TERRITORIES"
+        }
+     ,  
+        {
+          "code": "TG",
+          "desc": "Togo"
+        }
+     ,  
+        {
+          "code": "TH",
+          "desc": "Thailand"
+        }
+     ,  
+        {
+          "code": "TK",
+          "desc": "TOKELAU"
+        }
+     ,  
+        {
+          "code": "TL",
+          "desc": "TIMOR-LESTE"
+        }
+     ,  
+        {
+          "code": "TM",
+          "desc": "Turkmenistan"
+        }
+     ,  
+        {
+          "code": "TN",
+          "desc": "Tunisia"
+        }
+     ,  
+        {
+          "code": "TO",
+          "desc": "Tonga"
+        }
+     ,  
+        {
+          "code": "TR",
+          "desc": "Turkey"
+        }
+     ,  
+        {
+          "code": "TT",
+          "desc": "Trinidad and Tobago"
+        }
+     ,  
+        {
+          "code": "TV",
+          "desc": "Tuvalu"
+        }
+     ,  
+        {
+          "code": "TW",
+          "desc": "Taiwan"
+        }
+     ,  
+        {
+          "code": "TZ",
+          "desc": "Tanzania"
+        }
+     ,  
+        {
+          "code": "UA",
+          "desc": "Ukraine"
+        }
+     ,  
+        {
+          "code": "UG",
+          "desc": "Uganda"
+        }
+     ,  
+        {
+          "code": "UM",
+          "desc": "UNITED STATES MINOR OUTLYING ISLANDS"
+        }
+     ,  
+        {
+          "code": "US",
+          "desc": "United States"
+        }
+     ,  
+        {
+          "code": "UY",
+          "desc": "Uruguay"
+        }
+     ,  
+        {
+          "code": "UZ",
+          "desc": "Uzbekistan"
+        }
+     ,  
+        {
+          "code": "VA",
+          "desc": "HOLY SEE (VATICAN CITY STATE)"
+        }
+     ,  
+        {
+          "code": "VC",
+          "desc": "SAINT VINCENT AND THE GRENADINES"
+        }
+     ,  
+        {
+          "code": "VE",
+          "desc": "Venezuela"
+        }
+     ,  
+        {
+          "code": "VG",
+          "desc": "VIRGIN ISLANDS, BRITISH"
+        }
+     ,  
+        {
+          "code": "VI",
+          "desc": "VIRGIN ISLANDS, U.S."
+        }
+     ,  
+        {
+          "code": "VN",
+          "desc": "Vietnam"
+        }
+     ,  
+        {
+          "code": "VU",
+          "desc": "Vanuatu"
+        }
+     ,  
+        {
+          "code": "WF",
+          "desc": "WALLIS AND FUTUNA"
+        }
+     ,  
+        {
+          "code": "WS",
+          "desc": "SAMOA"
+        }
+     ,  
+        {
+          "code": "YE",
+          "desc": "Yemen"
+        }
+     ,  
+        {
+          "code": "YT",
+          "desc": "MAYOTTE"
+        }
+     ,  
+        {
+          "code": "ZA",
+          "desc": "South Africa"
+        }
+     ,  
+        {
+          "code": "ZM",
+          "desc": "Zambia"
+        }
+     ,  
+        {
+          "code": "ZW",
+          "desc": "Zimbabwe"
+        }
+         ]}
+
+
+,{
+    "key":  "P_EMPLOYMENT_TYPE"
+ ,     "tag":  "CODE_53510"
+ ,     "title":  "Contract Type"
+ ,     "type":  "control_Dropdown"
+ ,     "selectedValue":  {"code": "","description": ""}
+ ,     "placeholder":  "Select ..."
+ ,     "orientation":  "horizontal"
+ ,     "hidden":  false
+ ,     "required":  false
+ ,      "options": [
+  
+        {
+          "code": "2",
+          "desc": "Temporary"
+        }
+     ,  
+        {
+          "code": "1",
+          "desc": "Permanent"
+        }
+         ]}
+
+
+,{
+    "key":  "P_JOB_CODE"
+ ,     "tag":  "SIGNED_BY_PREFIX_12701"
+ ,     "title":  "Job"
+ ,     "type":  "control_Dropdown"
+ ,     "selectedValue":  {"code": "","description": ""}
+ ,     "placeholder":  "Select ..."
+ ,     "orientation":  "horizontal"
+ ,     "hidden":  false
+ ,     "required":  false
+ ,      "options": [
+  
+        {
+          "code": "STFL",
+          "desc": "STAFF LEVEL"
+        }
+     ,  
+        {
+          "code": "MGRL",
+          "desc": "MANAGERIAL LEVEL"
+        }
+     ,  
+        {
+          "code": "SUPL",
+          "desc": "SUPERVIOSRY LEVEL"
+        }
+     ,  
+        {
+          "code": "EXEL",
+          "desc": "EXECUTIVE LEVEL"
+        }
+     ,  
+        {
+          "code": "LNLL",
+          "desc": "LINE LEVEL"
+        }
+         ]}
+
+
+]}
